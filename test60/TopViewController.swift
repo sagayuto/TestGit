@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import PGFramework
 
-class TopViewController: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+class TopViewController: BaseViewController {
+    
 }
+
+// MARK: - Life cycle
+extension TopViewController {
+    
+}
+
+// MARK: - Protocol
+extension TopViewController {
+    
+}
+
+// MARK: - method
+extension TopViewController {
+    
+}
+

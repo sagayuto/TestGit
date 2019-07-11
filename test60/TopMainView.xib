@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="test60" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMainView" customModule="test60" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="zPP-C8-mzD"/>
+                <outlet property="tableView" destination="2hC-aS-suJ" id="hFj-Qb-zPG"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,17 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJs-xA-1UJ" customClass="TopMainView" customModule="test60" customModuleProvider="target">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-aS-suJ">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qJs-xA-1UJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="65k-gT-nZe"/>
-                <constraint firstItem="qJs-xA-1UJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8JZ-Qp-0lF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qJs-xA-1UJ" secondAttribute="bottom" id="EC1-bG-GwS"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qJs-xA-1UJ" secondAttribute="trailing" id="zvl-m3-nDD"/>
+                <constraint firstItem="2hC-aS-suJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HiF-I4-Zgo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2hC-aS-suJ" secondAttribute="trailing" id="ecI-n0-2GX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2hC-aS-suJ" secondAttribute="bottom" id="lw6-uF-Y3M"/>
+                <constraint firstItem="2hC-aS-suJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mOW-J3-J6S"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
