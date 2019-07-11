@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import PGFramework
 
-class TopMainViewCell: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+protocol TopMainViewCellDelegate: NSObjectProtocol{
+    
 }
+
+extension TopMainViewCellDelegate {
+    
+}
+// MARK: - Property
+class TopMainViewCell: BaseTableViewCell {
+    weak var delegate: TopMainViewCellDelegate? = nil
+}
+
+// MARK: - Life cycle
+extension TopMainViewCell {
+    
+}
+
+// MARK: - Protocol
+extension TopMainViewCell {
+    
+}
+
+// MARK: - method
+extension TopMainViewCell {
+    
+}
+
