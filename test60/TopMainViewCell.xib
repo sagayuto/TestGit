@@ -40,7 +40,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.8561213325" green="0.8980392157" blue="0.114164296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="QTW-21-UhM" firstAttribute="top" secondItem="hOy-QI-WEh" secondAttribute="top" constant="16" id="3lf-bN-cJs"/>
                     <constraint firstItem="H2P-LN-2z1" firstAttribute="top" secondItem="hOy-QI-WEh" secondAttribute="top" constant="12" id="7RK-Xr-qwN"/>
@@ -52,6 +52,9 @@
                     <constraint firstAttribute="trailing" secondItem="H2P-LN-2z1" secondAttribute="trailing" constant="16" id="zmX-dm-hir"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="image1" destination="QTW-21-UhM" id="yBf-ng-DhR"/>
+            </connections>
             <point key="canvasLocation" x="66.666666666666671" y="14.732142857142856"/>
         </tableViewCell>
     </objects>

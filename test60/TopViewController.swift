@@ -11,11 +11,17 @@ import PGFramework
 
 
 class TopViewController: BaseViewController {
+    @IBOutlet weak var label: UILabel!
     
 }
 
 // MARK: - Life cycle
 extension TopViewController {
+    override func loadView() {
+        super.loadView()
+        self.label.text = "お知らせ"
+        navigationController?.isNavigationBarHidden = true
+    }
     
 }
 

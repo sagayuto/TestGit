@@ -63,7 +63,7 @@ extension NavigationHeaderView {
         leftButton.isHidden = true
         
         // view
-        backgroundColor = UIColor(hex: Const.COLOR.HEADER)
+//        backgroundColor = UIColor(hex: Const.COLOR.HEADER)
         
         // right image view
         rightImageView.layer.cornerRadius = 10.0
