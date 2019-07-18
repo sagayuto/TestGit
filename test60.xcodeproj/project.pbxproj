@@ -33,6 +33,10 @@
 		302E4C2F22D75BF2000839C6 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4C1B22D75BF2000839C6 /* BaseTableView.swift */; };
 		302E4C3022D75BF2000839C6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E4C1C22D75BF2000839C6 /* BaseView.swift */; };
 		302E4C3122D75BF2000839C6 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E4C2222D75BF2000839C6 /* NavigationHeaderView.xib */; };
+		308A2D6422E088B800EB2C9F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308A2D6322E088B800EB2C9F /* NextViewController.swift */; };
+		308A2D6622E088C200EB2C9F /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308A2D6522E088C200EB2C9F /* NextViewController.xib */; };
+		308A2D6822E089C500EB2C9F /* NextMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308A2D6722E089C500EB2C9F /* NextMainView.swift */; };
+		308A2D6A22E089CC00EB2C9F /* NextMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308A2D6922E089CC00EB2C9F /* NextMainView.xib */; };
 		6A79E89C6CA8D60CADFEB318 /* Pods_test60UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E74F25766E082DA36D12D85 /* Pods_test60UITests.framework */; };
 		7F55842F1C6D818F3462BC79 /* Pods_test60.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19AF682F45F634737C5E9759 /* Pods_test60.framework */; };
 		9CDEC6F0441A4B87C4A3D5E1 /* Pods_test60Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0338CC2664F322FE5148D63F /* Pods_test60Tests.framework */; };
@@ -92,6 +96,10 @@
 		302E4C1B22D75BF2000839C6 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		302E4C1C22D75BF2000839C6 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		302E4C2222D75BF2000839C6 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
+		308A2D6322E088B800EB2C9F /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		308A2D6522E088C200EB2C9F /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		308A2D6722E089C500EB2C9F /* NextMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMainView.swift; sourceTree = "<group>"; };
+		308A2D6922E089CC00EB2C9F /* NextMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextMainView.xib; sourceTree = "<group>"; };
 		3E74F25766E082DA36D12D85 /* Pods_test60UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test60UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		502B01B08FB25A84EDE2649B /* Pods-test60.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test60.release.xcconfig"; path = "Target Support Files/Pods-test60/Pods-test60.release.xcconfig"; sourceTree = "<group>"; };
 		6B704B7909D77CD170E08656 /* Pods-test60UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test60UITests.release.xcconfig"; path = "Target Support Files/Pods-test60UITests/Pods-test60UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 				302E4C0722D75255000839C6 /* TopMainView.xib */,
 				302E4C0322D74E0A000839C6 /* TopMainViewCell.swift */,
 				302E4C0522D74E16000839C6 /* TopMainViewCell.xib */,
+				308A2D6322E088B800EB2C9F /* NextViewController.swift */,
+				308A2D6522E088C200EB2C9F /* NextViewController.xib */,
+				308A2D6722E089C500EB2C9F /* NextMainView.swift */,
+				308A2D6922E089CC00EB2C9F /* NextMainView.xib */,
 			);
 			path = test60;
 			sourceTree = "<group>";
@@ -438,7 +450,9 @@
 				302E4BDA22D748E6000839C6 /* LaunchScreen.storyboard in Resources */,
 				302E4BD722D748E6000839C6 /* Assets.xcassets in Resources */,
 				302E4BD522D748E2000839C6 /* Main.storyboard in Resources */,
+				308A2D6A22E089CC00EB2C9F /* NextMainView.xib in Resources */,
 				302E4C0622D74E16000839C6 /* TopMainViewCell.xib in Resources */,
+				308A2D6622E088C200EB2C9F /* NextViewController.xib in Resources */,
 				302E4C0822D75255000839C6 /* TopMainView.xib in Resources */,
 				302E4C3122D75BF2000839C6 /* NavigationHeaderView.xib in Resources */,
 			);
@@ -567,11 +581,13 @@
 				302E4C2622D75BF2000839C6 /* AnimatorManager.swift in Sources */,
 				302E4C2E22D75BF2000839C6 /* BaseNavigationControllerViewController.swift in Sources */,
 				302E4C2D22D75BF2000839C6 /* BaseTableViewCell.swift in Sources */,
+				308A2D6422E088B800EB2C9F /* NextViewController.swift in Sources */,
 				302E4C2B22D75BF2000839C6 /* ListModel.swift in Sources */,
 				302E4C2422D75BF2000839C6 /* NavigationHeaderView.swift in Sources */,
 				302E4C2522D75BF2000839C6 /* Global.swift in Sources */,
 				302E4C2722D75BF2000839C6 /* UserDataManager.swift in Sources */,
 				302E4C2A22D75BF2000839C6 /* BaseTabBarController.swift in Sources */,
+				308A2D6822E089C500EB2C9F /* NextMainView.swift in Sources */,
 				302E4C0222D74DEF000839C6 /* TopMainView.swift in Sources */,
 				302E4C2F22D75BF2000839C6 /* BaseTableView.swift in Sources */,
 				302E4BD022D748E2000839C6 /* AppDelegate.swift in Sources */,

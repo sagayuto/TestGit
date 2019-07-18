@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="1818.840579710145" y="1432.3660714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="II7-ZW-7HD">
             <objects>
-                <viewController id="nVO-4n-qwJ" sceneMemberID="viewController">
+                <viewController id="nVO-4n-qwJ" customClass="NextViewController" customModule="test60" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LuZ-Fi-smt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1a-Da-0yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
