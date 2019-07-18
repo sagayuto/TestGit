@@ -20,10 +20,15 @@ extension TopMainViewCellDelegate {
 // MARK: - Property
 class TopMainViewCell: BaseTableViewCell {
     weak var delegate: TopMainViewCellDelegate? = nil
+    @IBOutlet weak var image1: UIImageView!
 }
 
 // MARK: - Life cycle
 extension TopMainViewCell {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.image1.layer.cornerRadius = 30
+    }
     
 }
 

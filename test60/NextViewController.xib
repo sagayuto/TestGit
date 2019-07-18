@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="test60" customModuleProvider="target">
+            <connections>
+                <outlet property="club" destination="t53-C4-Ilp" id="pmQ-Lu-8bf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="TjL-Jf-ScX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beE-et-Wdx" customClass="NavigationHeaderView" customModule="test60" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rX-To-oj3">
+                            <rect key="frame" x="16" y="16" width="38" height="38"/>
+                            <color key="backgroundColor" red="0.2609792997" green="0.2104572824" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="38" id="J8C-s6-OAG"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t53-C4-Ilp">
+                            <rect key="frame" x="186" y="24" width="42" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="t53-C4-Ilp" firstAttribute="centerX" secondItem="beE-et-Wdx" secondAttribute="centerX" id="22l-or-K3z"/>
+                        <constraint firstItem="t53-C4-Ilp" firstAttribute="top" secondItem="beE-et-Wdx" secondAttribute="top" constant="24" id="BWb-sv-cIU"/>
+                        <constraint firstItem="6rX-To-oj3" firstAttribute="top" secondItem="beE-et-Wdx" secondAttribute="top" constant="16" id="GTa-bM-vLB"/>
+                        <constraint firstItem="6rX-To-oj3" firstAttribute="leading" secondItem="beE-et-Wdx" secondAttribute="leading" constant="16" id="Wvb-Xn-l5q"/>
+                        <constraint firstItem="t53-C4-Ilp" firstAttribute="centerY" secondItem="beE-et-Wdx" secondAttribute="centerY" id="Yrg-Jy-Wye"/>
+                        <constraint firstAttribute="bottom" secondItem="t53-C4-Ilp" secondAttribute="bottom" constant="24" id="ci7-bD-mqc"/>
+                        <constraint firstAttribute="bottom" secondItem="6rX-To-oj3" secondAttribute="bottom" constant="16" id="pWY-8h-pKp"/>
+                        <constraint firstAttribute="height" constant="70" id="zPe-jU-wVz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piO-WT-Glk" customClass="NextMainView" customModule="test60" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="piO-WT-Glk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="39A-Ye-9Al"/>
+                <constraint firstItem="beE-et-Wdx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="72F-G3-4Fe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="beE-et-Wdx" secondAttribute="trailing" id="Iax-c4-crF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="piO-WT-Glk" secondAttribute="trailing" id="JXA-Vy-QEy"/>
+                <constraint firstItem="beE-et-Wdx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RQQ-Oh-W4P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="piO-WT-Glk" secondAttribute="bottom" id="ZIW-Ps-CqE"/>
+                <constraint firstItem="piO-WT-Glk" firstAttribute="top" secondItem="beE-et-Wdx" secondAttribute="bottom" id="Zn2-A6-JXh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
