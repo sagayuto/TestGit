@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="test60" customModuleProvider="target">
             <connections>
                 <outlet property="club" destination="t53-C4-Ilp" id="pmQ-Lu-8bf"/>
+                <outlet property="mainView" destination="piO-WT-Glk" id="bhH-07-XyA"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TjL-Jf-ScX"/>
             </connections>
         </placeholder>

@@ -11,7 +11,8 @@ import PGFramework
 
 
 protocol NextMainViewDelegate: NSObjectProtocol{
-    
+    func aaa()
+    func dida()
 }
 
 extension NextMainViewDelegate {
@@ -22,6 +23,15 @@ class NextMainView: BaseView {
     weak var delegate: NextMainViewDelegate? = nil
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var notButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func chengeText(_ sender: UITextField) {
+       delegate?.aaa()
+    }
+    @IBAction func saveButton2(_ sender: UIButton) {
+        delegate?.dida()
+    }
+    
+    
 }
 
 // MARK: - Life cycle
@@ -31,12 +41,27 @@ extension NextMainView {
         self.saveButton.layer.cornerRadius = 24
         self.notButton.layer.cornerRadius = 24
         self.notButton.layer.borderWidth = 0.5
+        textField.delegate = self
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+    }
+
 }
 
 // MARK: - Protocol
-extension NextMainView {
+extension NextMainView: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.endEditing(true)
+//        return true
+        
+//        textField.isFirstResponder
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    
     
 }
 
